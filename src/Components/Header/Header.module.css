@@ -1,0 +1,212 @@
+/* Header */
+.header {
+  background-color: #232f3e;
+  color: white;
+}
+
+/* Container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+/* Logo */
+.logoContainer {
+  width: 120px; /* Adjust width as needed */
+  transition: transform 0.3s ease-in-out;
+}
+.fixed{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logoContainer:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+.logo:hover{
+  transform: scale(1.05);
+}
+/* Delivery */
+.delivery {
+  display: flex;
+  align-items: center;
+}
+
+.deliveryIcon {
+  font-size: 1rem;
+  margin-right: 5px;
+  /* display: flex; */
+  align-items: center;
+}
+
+.deliveryInfo {
+  margin-left: 5px;
+}
+.deliveryInfo:hover{
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+/* Search */
+.search {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allow search bar to expand */
+}
+
+.select {
+  padding: 0px;
+  margin-right: 10px;
+}
+.select:hover{
+border: 1px solid white;
+  border-radius: 1px;}
+
+.input {
+  flex-grow: 1;
+  padding: 10px; /* Increase padding for longer search bar */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 100%; /* Full width */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input:hover {
+  border-color: #ffc107; /* Change border color on hover */
+}
+
+.searchIconContainer {
+  background-color: #ffc107; /* Search icon background color */
+  padding: 8px; /* Adjust padding as needed */
+  border-radius: 0 4px 4px 0; /* Rounded border on the right */
+}
+
+.searchIcon {
+  color: #232f3e; /* Search icon color */
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.searchIcon:hover {
+  color: white; /* Change search icon color on hover */
+}
+
+/* Right Side Links */
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+.language {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.languageFlag {
+  width: 30px; /* Adjust as needed */
+  height: auto;
+}
+
+.navLink {
+  margin-right: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link:hover{
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.cart {
+  position: relative; /* Ensure relative positioning for absolute child */
+  margin-right: 20px; /* Adjust spacing */
+}
+.cart:hover{
+  border: 1px solid white;
+  border-radius: 3px;
+}
+.cartIconContainer {
+  position: relative;
+}
+
+.cartIcon {
+  font-size: 24px;
+}
+
+.cartCount {
+  position: absolute;
+  top: -8px; /* Adjust vertical position */
+  right: -8px; /* Adjust horizontal position */
+  background-color: orange;
+  color: white;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 50%; /* Ensure circular shape */
+}
+/* Header.module.css */
+
+.lower_container {
+    background-color: #36485d;
+    padding: 0px 0;
+}
+
+.lower_container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.lower_container ul li {
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+
+  padding: 8px 8px;
+  display: none; /* Hide all li by default */
+}
+
+.lower_container ul li:first-child {
+  display: flex; /* Display first li as flex */
+}
+
+.lower_container ul li p {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.lower_container ul li:hover {
+  border: 1px solid #ccc; /* Solid 1px border when hovered */
+}
+
+@media (min-width: 768px) {
+  .lower_container ul li {
+    display: inline-block; /* Inline block display for larger screens */
+    border: 1px solid transparent; /* Transparent border by default */
+    transition: border-color 0.3s ease; /* Smooth transition for border */
+  }
+
+  .lower_container ul li:hover {
+    border-color: #ccc; /* Change border color on hover */
+  }
+}
+.cart.product{
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,50 @@
+.container {
+  padding: 20px;
+}
+
+.cart_container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cart_product {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart_product:last-child {
+  border-bottom: none;
+}
+
+.cart_product button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 20px 10px;
+  /* margin: 0 5px; */
+  border-radius: 4px;
+}
+
+.subtotal {
+  /* margin-top: 20px; */
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.subtotal p {
+  /* margin-bottom: 10px; */
+  font-weight: bold;
+}
+
+.subtotal input[type="checkbox"] {
+  margin-right: 5px;
+}
